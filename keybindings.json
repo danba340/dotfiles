@@ -64,6 +64,16 @@
     "key": "d",
     "when": "filesExplorerFocus && !inputFocus"
   },
+  {
+    "command": "filesExplorer.copy",
+    "key": "y",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "filesExplorer.paste",
+    "key": "p",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
 
   // EXTRA
   {
