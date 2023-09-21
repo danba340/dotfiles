@@ -24,6 +24,12 @@ load-nvmrc
 gac() {
         git add . && git commit -m "$1"
 }
+gacp() {
+        git add . && git commit -m "No comment" && git push
+}
+gacpm() {
+        git add . && git commit -m "$1" && git push
+}
 nr() {
         npm run "$1"
 }
