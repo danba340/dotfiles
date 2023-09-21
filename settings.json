@@ -118,7 +118,8 @@
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"
   // },
   "search.exclude": {
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/package-lock.json": true
   },
   "editor.tabSize": 2,
   "editor.cursorStyle": "line",
