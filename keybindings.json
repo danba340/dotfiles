@@ -104,6 +104,6 @@
   {
     "key": "ctrl+j",
     "command": "search.action.focusSearchList",
-    "when": "sideBarFocus && searchViewletVisible"
+    "when": "sideBarFocus && searchViewletVisible && inputFocus"
   }
 ]
