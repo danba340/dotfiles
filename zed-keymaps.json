@@ -1,0 +1,87 @@
+[
+  // Standard macOS bindings
+  {
+    "bindings": {
+      "ctrl-w": "project_panel::ToggleFocus",
+      "ctrl-t": "terminal_panel::ToggleFocus",
+      "ctrl-e": "workspace::ToggleLeftDock",
+      "ctrl-r": "workspace::ToggleRightDock",
+      "ctrl-b": "diagnostics::Deploy",
+      "ctrl-d": "editor::GoToDiagnostic",
+      "ctrl-shift-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-shift-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-shift-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-shift-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-k": "menu::SelectPrev",
+      "ctrl-j": "menu::SelectNext",
+      "enter": "editor::OpenExcerpts"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-s": "tab_switcher::Toggle"
+    }
+  },
+  {
+    "context": "Editor && mode == full && inline_completion",
+    "bindings": {
+      "ctrl-k": "editor::PreviousInlineCompletion",
+      "ctrl-j": "editor::NextInlineCompletion"
+    }
+  },
+  {
+    "context": "Editor && !inline_completion",
+    "bindings": {
+      "alt-d": "editor::Hover",
+      "ctrl-.": "editor::ShowCompletions",
+      "ctrl-k": "editor::HalfPageUp",
+      "ctrl-j": "editor::HalfPageDown"
+    }
+  },
+  {
+    "context": "AssistantPanel",
+    "bindings": {
+      "ctrl-k": "search::SelectPrevMatch",
+      "ctrl-j": "search::SelectNextMatch"
+    }
+  },
+  {
+    "context": "ProjectSearchBar > Editor",
+    "bindings": {
+      "ctrl-k": "search::PreviousHistoryQuery",
+      "ctrl-j": "search::NextHistoryQuery"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-h": "pane::ActivatePrevItem",
+      "alt-l": "pane::ActivateNextItem",
+      "ctrl-j": "search::SelectNextMatch",
+      "ctrl-k": "search::SelectPrevMatch"
+    }
+  },
+  // Splits
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt--": "pane::SplitDown",
+      "alt-|": "pane::SplitRight"
+    }
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "ctrl-k": "editor::ContextMenuPrev",
+      "ctrl-j": "editor::ContextMenuNext"
+    }
+  },
+  {
+    "context": "FileFinder",
+    "bindings": {
+      "ctrl-k": "file_finder::SelectPrev",
+      "ctrl-j": "file_finder::SelectPrev"
+    }
+  }
+]
