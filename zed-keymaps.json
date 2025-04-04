@@ -8,13 +8,16 @@
       "ctrl-r": "workspace::ToggleRightDock",
       "ctrl-b": "diagnostics::Deploy",
       "ctrl-d": "editor::GoToDiagnostic",
-      "ctrl-shift-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-shift-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-shift-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-shift-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-k": "menu::SelectPrev",
-      "ctrl-j": "menu::SelectNext",
-      "enter": "editor::OpenExcerpts"
+      "ctrl-shift-h": "workspace::ActivatePaneLeft",
+      "ctrl-shift-l": "workspace::ActivatePaneRight",
+      "ctrl-shift-k": "workspace::ActivatePaneUp",
+      "ctrl-shift-j": "workspace::ActivatePaneDown",
+      "ctrl-p": "menu::SelectPrev",
+      "ctrl-n": "menu::SelectNext",
+      "enter": "editor::OpenExcerpts",
+      "alt-s": "workspace::Save",
+      "alt-c": "editor::Copy",
+      "alt-v": "vim::Paste"
     }
   },
   {
@@ -24,14 +27,14 @@
     }
   },
   {
-    "context": "Editor && mode == full && inline_completion",
+    "context": "Editor && mode == full && edit_prediction",
     "bindings": {
-      "ctrl-k": "editor::PreviousInlineCompletion",
-      "ctrl-j": "editor::NextInlineCompletion"
+      "ctrl-p": "editor::PreviousEditPrediction",
+      "ctrl-n": "editor::NextEditPrediction"
     }
   },
   {
-    "context": "Editor && !inline_completion",
+    "context": "Editor && !edit_prediction",
     "bindings": {
       "alt-d": "editor::Hover",
       "ctrl-.": "editor::ShowCompletions",
