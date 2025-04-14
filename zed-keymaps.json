@@ -12,7 +12,7 @@
       "ctrl-shift-l": "workspace::ActivatePaneRight",
       "ctrl-shift-k": "workspace::ActivatePaneUp",
       "ctrl-shift-j": "workspace::ActivatePaneDown",
-      "ctrl-p": "menu::SelectPrev",
+      "ctrl-p": "menu::SelectPrevious",
       "ctrl-n": "menu::SelectNext",
       "enter": "editor::OpenExcerpts",
       "alt-s": "workspace::Save",
@@ -45,7 +45,7 @@
   {
     "context": "AssistantPanel",
     "bindings": {
-      "ctrl-k": "search::SelectPrevMatch",
+      "ctrl-k": "search::SelectPreviousMatch",
       "ctrl-j": "search::SelectNextMatch"
     }
   },
@@ -59,10 +59,10 @@
   {
     "context": "Pane",
     "bindings": {
-      "alt-h": "pane::ActivatePrevItem",
+      "alt-h": "pane::ActivatePreviousItem",
       "alt-l": "pane::ActivateNextItem",
       "ctrl-j": "search::SelectNextMatch",
-      "ctrl-k": "search::SelectPrevMatch"
+      "ctrl-k": "search::SelectPreviousMatch"
     }
   },
   // Splits
@@ -76,15 +76,15 @@
   {
     "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
-      "ctrl-k": "editor::ContextMenuPrev",
+      "ctrl-k": "editor::ContextMenuPrevious",
       "ctrl-j": "editor::ContextMenuNext"
     }
   },
   {
     "context": "FileFinder",
     "bindings": {
-      "ctrl-k": "file_finder::SelectPrev",
-      "ctrl-j": "file_finder::SelectPrev"
+      "ctrl-k": "file_finder::SelectPrevious",
+      "ctrl-j": "file_finder::SelectPrevious"
     }
   }
 ]
