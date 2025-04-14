@@ -60,7 +60,7 @@
     "default_width": 360
   },
   "chat_panel": {
-    "button": false
+    "button": "never"
   },
   "notification_panel": {
     "button": false
@@ -77,7 +77,7 @@
   //   "enabled": true
   // },
   "features": {
-    "inline_completion_provider": "copilot"
+    "edit_prediction_provider": "copilot"
   },
   "terminal": {
     // "button": false,
