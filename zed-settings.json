@@ -1,0 +1,86 @@
+{
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": true,
+  "cursor_blink": false,
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "ui_font_family": "FantasqueSansM Nerd Font Mono",
+  "buffer_font_family": "FantasqueSansM Nerd Font Mono",
+  "theme": {
+    "mode": "dark",
+    "light": "Gruvbox Light",
+    "dark": "Catppuccin Mocha"
+  },
+  "gutter": {
+    "code_actions": false,
+    "runnables": false,
+    "folds": false
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "toolbar": {
+    // "breadcrumbs": false,
+    // "quick_actions": false,
+    // "selections_menu": false
+  },
+  "scrollbar": {
+    // "show": "never"
+  },
+  "indent_guides": {
+    // "enabled": false
+  },
+  "relative_line_numbers": true,
+  "project_panel": {
+    "button": false,
+    "default_width": 320,
+    // "file_icons": false,
+    "scrollbar": {
+      // "show": "never"
+    }
+  },
+  "outline_panel": {
+    "button": false,
+    "default_width": 360
+  },
+  "collaboration_panel": {
+    "button": false,
+    "default_width": 360
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "notification_panel": {
+    "button": false
+  },
+  "tab_bar": {
+    // "show": false
+  },
+  // "assistant": {
+  //   "default_model": {
+  //     "provider": "copilot_chat",
+  //     "model": "gpt-3.5-turbo"
+  //   },
+  //   "version": "2",
+  //   "enabled": true
+  // },
+  "features": {
+    "inline_completion_provider": "copilot"
+  },
+  "terminal": {
+    // "button": false,
+    "dock": "right"
+  }
+}
